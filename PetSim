@@ -1,1 +1,9 @@
-6284583030
+
+s = game:service("TeleportService")
+id = 6284583030 --Game ID Here
+
+function onClicked()
+s:Teleport(6284583030)
+end
+
+script.Parent.MouseButton1Click:connect(onClicked)
