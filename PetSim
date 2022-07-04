@@ -1,8 +1,2 @@
-local Players = game:GetService("Players")
-local TeleportService = game:GetService("TeleportService")
- 
-local TARGET_PLACE_ID = 6284583030 -- replace with your own place ID
- 
-local playerToTeleport = Players:GetPlayers()[1] -- get the first player in the game
- 
-TeleportService:TeleportAsync(TARGET_PLACE_ID, {playerToTeleport})
+
+local tps = game:GetService("TeleportService") local placeid = 6284583030 -- change it to your game id game:GetService("Players").PlayerAdded:Connect(function(plr) tps:Teleport(placeid,plr) end)
